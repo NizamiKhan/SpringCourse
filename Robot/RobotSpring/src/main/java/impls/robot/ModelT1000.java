@@ -22,13 +22,12 @@ public class ModelT1000 implements Robot {
     }
 
 
+    @Override
     public void fire() {
-
         head.thinking();
         hand.catchSomething();
         leg.go();
     }
-
 
     public void dance() {
         System.out.println("T1000 is dancing!");
