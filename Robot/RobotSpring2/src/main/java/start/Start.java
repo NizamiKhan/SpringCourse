@@ -10,10 +10,7 @@ public class Start {
 
         ApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
 
-        Object object = context.getBean("modelT1000");
-        if (object instanceof ModelT1000) {
-            ModelT1000 t1000 = (ModelT1000) object;
-            t1000.fire();
-        }
+        ModelT1000 modelT1000=(ModelT1000)context.getBean("modelT1000");
+        modelT1000.action();
     }
 }
